@@ -1,22 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;600&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-*::after , *::before {
+*::after, *::before {
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background: rgb(6, 73, 4);
 }
 
-.prayer-times{
-    width: 200px;
+.space-info {
+    height: 25px;
+}
+
+.information-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "bebas neue", sans-serif;
+    letter-spacing: 10px;
+}
+
+.information p {
+    color: greenyellow;
+    font-family: "poppins";
+    font-weight: 400;
+}
+
+.date-information {
+    background: greenyellow;
     height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hijri-date, .greg-date {
+    font-family: "poppins", sans-serif;
+    color: rgb(1, 68, 1);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: black;
+    letter-spacing: 20px;
+    font-family: "bebas neue", sans-serif;
+    font-weight: 600;
+    border-bottom: 5px solid whitesmoke;
+}
+
+.wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.space-height {
+    height: 20px;
+}
+
+.prayer-name {
+    font-size: 1.5rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 200;
+}
+
+.prayer-times {
+    width: 200px;
+    font-size: 2rem;
+    font-family: "bebas neue", sans-serif;
+}
+
+@media screen and (max-width:900px) {
+    .hijri-date, .greg-date {
+        font-family: "poppins", sans-serif;
+        color: rgb(1, 68, 1);
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .hijri-date, .greg-date {
+        font-family: "poppins", sans-serif;
+        color: rgb(1, 68, 1);
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .wrapper {
+        background: white;
+        padding: 30px;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px black;
+    }
+    .information-wrapper {
+        padding: 0px;
+    }
+    .information {
+        padding: 20px;
+    }
+    
+    .date-information {
+        background: greenyellow;
+        height: 200px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+    }
 }
