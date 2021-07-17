@@ -18,7 +18,7 @@ async function updateSalah(data){
     const callDate = new Date();
     const date = callDate.getDate();
     
-    const responseSalah = await fetch (`http://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${long}`)
+    const responseSalah = await fetch (`https://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${long}`)
     const dataSalah = await responseSalah.json();
     const currentData = dataSalah.data[date-1];
     updateTimings(currentData);
