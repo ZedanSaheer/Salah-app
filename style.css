@@ -107,6 +107,11 @@ h2 {
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    h2{
+        margin: 20px;
+    }
+
     .hijri-date, .greg-date {
         font-family: "poppins", sans-serif;
         color: rgb(1, 68, 1);
@@ -129,7 +134,7 @@ h2 {
     
     .date-information {
         background: greenyellow;
-        height: 200px;
+        min-height: 300px;
         width: 100%;
         padding: 20px;
         border-radius: 0px;
